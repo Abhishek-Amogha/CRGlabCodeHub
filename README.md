@@ -21,6 +21,6 @@ I am currently the maintainer of this repository, a role I have chosen for mysel
 
 ## Important Note
 
-While this repository is hosted under my profile, it does not imply that the entire project is solely my work. This repository exists because it was my idea, and I took the initiative to create it. I encourage everyone to contribute and feel free to submit pull requests to modify the README file or the Constitution as needed.
+While this repository is hosted under my profile, it does not imply that the entire project is solely my work. It is so because it was my idea, and I took the initiative to create it. I encourage everyone to contribute and feel free to submit pull requests to modify the README file or the Constitution as needed.
 
 Thank you for being a part of CRGlabCodeHub! Let's collaborate and innovate together!
