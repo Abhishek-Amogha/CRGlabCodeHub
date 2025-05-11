@@ -1,4 +1,8 @@
 # Automatic Daily Backup | Script & Commands
+**S. Abhishek**  
+
+---
+
 
 Below are the steps to create a simple Bash script to back up your home folder to a specified location on your PC every 24 hours:
 
