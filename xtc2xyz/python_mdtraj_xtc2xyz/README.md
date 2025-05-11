@@ -1,5 +1,7 @@
 # README for Trajectory to XYZ Conversion Script
+**Loknath Patro**  
 
+---
 ## Overview
 
 This script reads a molecular dynamics trajectory from XTC and topology from a GRO file, converts the coordinates from nanometers (nm) to angstroms (Å), and writes the data into an XYZ file format. The output file has a more compact format compared to the VMD-generated XYZ files. The main difference is that VMD generates extra space gaps (6-space gap between coordinates), while this script uses only a single space gap between coordinates, resulting in a smaller file size (half of vmd generated file).
