@@ -11,16 +11,16 @@ Welcome to the CRGlabCodeHub! This repository serves as a collaborative space fo
 
 ## Maintainers
 
-I am currently the maintainer of this repository, a role I have chosen for myself. Future maintainers will be selected by majority vote from the lab members. The role of maintainer may change if the current maintainer leaves or if there is any dispute. For more details, please refer to the Constitution.
+I am currently the maintainer of this repository, a role I have chosen for myself. Future maintainers will be selected by majority vote from the lab members. The maintainer may change if the current maintainer is no longer the active member of lab or if there is any dispute. 
 
 ## Contribution Guidelines
 
-- **Readme Files**: Everyone is encouraged to write README files for their code. At a minimum, please generate a README to provide essential information about your project.
-- **Code Comments**: Ensure that comments are added to your code for better readability. At least generate comments to clarify your code's functionality.
-- **Project Header**: Each project README should be headed with the names of the main contributors, formatted in a way that reflects authorship.
+- **Readme Files**: Everyone is encouraged to write README files for their code. At a minimum, please write or get an AI generated README to provide essential information about your code.
+- **Code Comments**: Ensure that comments are added to your code for better readability. (Or at least get AI generated comments to clarify your code's functionality)
+- **Project Header**: Each project README should be headed with the names of the contributors, formatted in a way that reflects authorship. (contribution in descending order)
 
 ## Important Note
 
-While this repository is hosted under my profile, it does not imply that the entire project is solely my work. It is so because it was my idea, and I took the initiative to create it. I encourage everyone to contribute and feel free to submit pull requests (even to modify the README file or the Constitution as needed).
+While this repository is hosted under my profile, it does not imply that the entire project is solely my work. It is so because it was my idea, and I took the initiative to create it. I encourage everyone to contribute and feel free to submit pull requests (even to modify the README file).
 
 Thank you for being a part of CRGlabCodeHub! Let's collaborate and innovate together!
