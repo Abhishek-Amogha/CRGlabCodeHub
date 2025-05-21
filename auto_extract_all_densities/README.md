@@ -14,8 +14,10 @@ This script automates the extraction of density data from `.edr` files generated
 
 ## Usage:
 
-1. Clone the repository:
-
+1. Make executable:
+```bash
+   chmod +x process_densities.sh
+````
 
 2. Run the script:
 
@@ -25,9 +27,9 @@ This script automates the extraction of density data from `.edr` files generated
 
 3. Replace `gmx` with `gmx_mpi` if running on Phi or similar high-performance computing environments:
 
-   ```bash
+```bash
    sed -i 's/gmx/gmx_mpi/' process_densities.sh
-   ```
+```
 
 ## Requirements:
 
