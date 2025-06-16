@@ -1,4 +1,7 @@
 # GROMACS Trajectory Processing Automation
+**S. Abhishek**  
+
+---
 
 ## Overview
 
