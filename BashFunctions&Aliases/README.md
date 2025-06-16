@@ -1,4 +1,7 @@
 # Bash Functions and Aliases for Lab Work
+**S. Abhishek**  
+
+---
 
 This repository contains a collection of useful **Bash functions** and **aliases** that simplify common tasks in the lab, such as generating plots from `.xvg` files, adjusting monitor brightness, debugging GaussView with GDB, and connecting to remote servers.
 
