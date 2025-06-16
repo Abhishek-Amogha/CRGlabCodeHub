@@ -11,7 +11,7 @@ Welcome to the CRGlabCodeHub! This repository serves as a collaborative space fo
 
 ## Maintainers
 
-I am currently the maintainer of this repository, a role I have chosen for myself. Future maintainers will be selected by majority vote from the lab members. The maintainer may change if the current maintainer is no longer the active member of lab or if there is any dispute. 
+I am currently the maintainer of this repository, a role I have chosen for myself. Future maintainers will be selected by the lab members. The maintainer may change if the current maintainer is no longer the active member of lab or over any dispute. 
 
 ## Contribution Guidelines
 
