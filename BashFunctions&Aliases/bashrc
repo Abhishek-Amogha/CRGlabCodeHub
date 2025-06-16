@@ -1,0 +1,108 @@
+# ===========================================================================
+# Bash Functions and Aliases for Lab Work
+# This script contains useful functions and aliases for various tasks.
+# Add them to your bashrc file and 
+# ===========================================================================
+#
+# 1. ConvertXVG2PNG
+#    - Converts .xvg data files into PNG plots.
+#    - The user is prompted to provide the .xvg file name, and the plot is saved
+#      as a PNG image. The 'grace' command is used to generate the plot.
+#
+# Usage:
+#   ConvertXVG2PNG
+#
+# ===========================================================================
+ConvertXVG2PNG() {
+    # Prompt the user for input file name
+    echo "Enter input file name (with .xvg extension):"
+    read input_file
+
+    # Replace .xvg extension with .png for the output file name
+    output_file="${input_file%.xvg}.png"
+
+    # Execute the grace command to generate the plot
+    grace -nxy "$input_file" -hardcopy -hdevice PNG -fixed 10000 6000 -printfile "$output_file"
+    
+    eog "$output_file"
+    echo "Output File: $output_file" 
+}
+
+# ===========================================================================
+# 2. brightness
+#    - Changes the brightness of all connected monitors using the xrandr command.
+#    - Accepts a value between 0 and 100 to adjust the screen brightness.
+#
+# Usage:
+#   brightness <value (0-100)>
+#
+# Example:
+#   brightness 50    # Set brightness to 50%
+#
+# ===========================================================================
+function brightness() {
+    if [ "$#" -ne 1 ]; then
+        echo "Usage: brightness <value (0-100)>"
+        return 1
+    fi
+
+    # Get the brightness value (convert to 0-1 range)
+    BRIGHTNESS_VALUE=$(echo "scale=2; $1 / 100" | bc)
+
+    # Get all connected display names
+    MONITORS=$(xrandr | grep ' connected' | awk '{ print $1 }')
+
+    if [ -z "$MONITORS" ]; then
+        echo "No monitors connected!"
+        return 1
+    fi
+
+    # Apply brightness to each connected monitor
+    for MONITOR in $MONITORS; do
+        xrandr --output $MONITOR --brightness $BRIGHTNESS_VALUE
+        echo "Brightness for $MONITOR set to: $1%"
+    done
+}
+
+# ===========================================================================
+# 3. gaussview_gdb
+#    - In ubuntu 2024, if you are using the default gnome for graphical interface, or in other linux systems, gaussview might not work. Add the below function and use 'gaussview_gdb' command to use gaussview within gdb (a debugging software)
+#    - Launches GaussView within GDB for debugging. This is useful when debugging
+#      GaussView's execution and helps in inspecting memory issues or bugs.
+#    - Requires that GDB is installed on the system.
+#    - Customise by changing the location of gaussview in your system
+#
+# Usage:
+#   gaussview_gdb <path_to_gaussian_input_file>
+#
+# Example:
+#   gaussview_gdb input.gjf  # Run GaussView under GDB to debug
+#
+# ===========================================================================
+gaussview_gdb() {
+    gdb --args /home/username/gv/gview.exe "$1" << EOF
+run
+n
+EOF
+}
+
+# ===========================================================================
+# Aliases
+#    - Shortcuts for common SSH and SFTP connections to the Gamma/Other servers.
+#    - Use the aliases to easily connect to the remote server.
+#
+# ===========================================================================
+alias ssh_Gamma='ssh -X user@ip'   # SSH into Gamma server with X11 forwarding
+alias sftp_Gamma='sftp user@ip'     # SFTP into Gamma server
+
+# ===========================================================================
+# 4. xmgrace
+#    - Customizes the default 'xmgrace' command to set a fixed geometry for the
+#      Grace plotting window.
+#
+# Usage:
+#   xmgrace [options]   # Opens Grace with the custom geometry setting
+#
+# ===========================================================================
+alias xmgrace='xmgrace -geometry 1200x1500'   # Set default window size for xmgrace
+
