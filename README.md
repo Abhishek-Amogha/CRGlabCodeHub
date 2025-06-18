@@ -16,8 +16,8 @@ I am currently the maintainer of this repository, a role I have chosen for mysel
 ## Contribution Guidelines
 
 - **Readme Files**: Everyone is encouraged to write README files for their code. At a minimum, please write or get an AI generated README to provide essential information about your code.
-- **Code Comments**: Ensure that comments are added to your code for better readability. (Or at least get AI generated comments to clarify your code's functionality)
-- **Project Header**: Each project README should be headed with the names of the contributors, formatted in a way that reflects authorship. (contribution in descending order)
+- **Code Comments**: Ensure that comments are added to your code for better readability. (If you have not written comments in your code, Kindly get AI generated comments to clarify your code's functionality)
+- **Project Header**: Each project README should be headed with the names of the contributors, formatted in a way that reflects authorship. (contribution(s) in descending order)
 
 ## Important Note
 
