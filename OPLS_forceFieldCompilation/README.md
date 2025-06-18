@@ -1,4 +1,7 @@
 # OPLS Force Field Compilation for GROMACS
+**S. Abhishek**  
+
+---
 
 ## Overview
 
